@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var triviaQuestion: UILabel!
     
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var answerMessage: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,7 +20,12 @@ class ViewController: UIViewController {
 
     @IBAction func correctAnswer(_ sender: UIButton) {
         if let response = textField.text {
-             = response
+            if response.lowercased() == "honolulu" {
+                answerMessage.text = "Yay, you got it right!🌺"
+            }
+            else {
+                answerMessage.text = "That's not quite right, try again!"
+            }
         }
     }
 }

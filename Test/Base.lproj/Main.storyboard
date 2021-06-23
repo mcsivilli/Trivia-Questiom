@@ -24,19 +24,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kVr-GX-VnU">
-                                <rect key="frame" x="159" y="666" width="97" height="34"/>
+                                <rect key="frame" x="101" y="304" width="213" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xow-SA-gep">
+                                <rect key="frame" x="85" y="547" width="229" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                <color key="textColor" red="0.70689380168914795" green="0.86076122522354126" blue="0.74858576059341431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvA-Ru-hF1">
-                                <rect key="frame" x="147" y="346" width="120" height="49"/>
+                                <rect key="frame" x="180" y="369" width="55" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="Honolulu"/>
+                                <state key="normal" title="GO!"/>
                                 <connections>
                                     <action selector="correctAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZe-AU-bi3"/>
-                                    <action selector="submitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="61z-v7-XTB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,6 +50,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="answerMessage" destination="xow-SA-gep" id="ylv-if-uWl"/>
                         <outlet property="textField" destination="kVr-GX-VnU" id="pML-t9-5eb"/>
                         <outlet property="triviaQuestion" destination="OZy-zU-hPO" id="G08-Nf-a8u"/>
                     </connections>
